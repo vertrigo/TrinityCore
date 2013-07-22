@@ -21,7 +21,7 @@
 
 enum Gluth
 {
-    SPELL_MORTAL_WOUND      = 54378,
+    SPELL_MORTAL_WOUND      = 25646,
     SPELL_ENRAGE            = 28371,
     SPELL_DECIMATE          = 28374,
     SPELL_BERSERK           = 26662,
