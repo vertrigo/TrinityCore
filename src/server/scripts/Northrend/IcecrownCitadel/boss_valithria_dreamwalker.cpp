@@ -337,7 +337,7 @@ class boss_valithria_dreamwalker : public CreatureScript
                 me->LowerPlayerDamageReq(heal);
 
                 // encounter complete
-                if (me->HealthAbovePctHealed(100, heal) && !_done)
+                if (me->HealthAbovePctHealed(99, heal) && !_done)
                 {
                     _done = true;
                     Talk(SAY_VALITHRIA_SUCCESS);

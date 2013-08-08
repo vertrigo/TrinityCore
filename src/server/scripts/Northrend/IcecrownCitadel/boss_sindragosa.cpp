@@ -253,6 +253,7 @@ class boss_sindragosa : public CreatureScript
                 DoCast(me, SPELL_FROST_AURA);
                 DoCast(me, SPELL_PERMAEATING_CHILL);
                 Talk(SAY_AGGRO);
+                me->setActive(true);
             }
 
             void JustReachedHome() OVERRIDE
