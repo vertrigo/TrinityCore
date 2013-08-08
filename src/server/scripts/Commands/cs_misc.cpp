@@ -1663,8 +1663,7 @@ public:
             security      = fields[1].GetUInt8();
 
             // Only fetch these fields if commander has sufficient rights)
-            if (handler->HasPermission(RBAC_PERM_COMMANDS_PINFO_CHECK_PERSONAL_DATA) && // RBAC Perm. 48, Role 39
-               (!handler->GetSession() || handler->GetSession()->GetSecurity() >= AccountTypes(security)))
+            if ((!handler->GetSession() || handler->GetSession()->GetSecurity() >= AccountTypes(security)))
             {
                 eMail     = fields[2].GetString();
                 lastIp    = fields[3].GetString();
